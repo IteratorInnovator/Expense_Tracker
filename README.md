@@ -25,5 +25,23 @@ A simple and efficient tool to keep track of your expenses. This application all
 - **Libraries/Dependencies**:
   - [CLI11](https://github.com/CLIUtils/CLI11): A powerful and flexible library for parsing command-line arguments.
 
+---
 
+## 🚀 Getting Started
 
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/ExpenseTracker.git
+   cd ExpenseTracker
+
+2. **Run the Application**:
+  ```bash
+  ./expense-tracker
+  ```
+
+---
+
+## 🗒️ Notes
+
+-The expense-tracker executable is pre-built and included in the repository. If you encounter compatibility issues or wish to modify the source code, you can rebuild it using a C++17-compatible compiler. 
+-If you're distributing the executable, ensure it's compiled in a way that maximizes compatibility (e.g., statically linking libraries or building on a standard environment). Let me know if you'd like to include additional details!
