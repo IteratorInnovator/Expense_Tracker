@@ -32,7 +32,7 @@ A simple and efficient tool to keep track of your expenses. This application all
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/IteratorInnovator/Expense_Tracker.git
-   cd ExpenseTracker
+   cd ExpenseTracker/build
 
 2. **Run the Application**:
    ```bash
