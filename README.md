@@ -35,13 +35,10 @@ A simple and efficient tool to keep track of your expenses. This application all
    cd ExpenseTracker
 
 2. **Run the Application**:
-  ```bash
-  ./expense-tracker
-  ```
-
+   ```bash
+   ./expense-tracker.exe
 ---
 
 ## 🗒️ Notes
 
--The expense-tracker executable is pre-built and included in the repository. If you encounter compatibility issues or wish to modify the source code, you can rebuild it using a C++17-compatible compiler. 
--If you're distributing the executable, ensure it's compiled in a way that maximizes compatibility (e.g., statically linking libraries or building on a standard environment). Let me know if you'd like to include additional details!
+-The expense-tracker executable is pre-built and included in the repository. If you encounter compatibility issues or wish to modify the source code, you can rebuild it using a C++17-compatible compiler. If you're distributing the executable, ensure it's compiled in a way that maximizes compatibility (e.g., statically linking libraries or building on a standard environment). Let me know if you'd like to include additional details!
