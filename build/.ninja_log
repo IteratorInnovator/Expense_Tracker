@@ -1,0 +1,5 @@
+# ninja log v6
+13	731	7554648886848393	CMakeFiles/expense-tracker.dir/Error.cpp.obj	33789bbee1660e47
+20	1437	7554648886848393	CMakeFiles/expense-tracker.dir/FUNCTIONS.cpp.obj	fb8723db13ec9538
+5	8213	7554648886687311	CMakeFiles/expense-tracker.dir/main.cpp.obj	49eabf6d857023b8
+8221	8614	7554648968906694	expense-tracker.exe	d57cb883df20c0cf

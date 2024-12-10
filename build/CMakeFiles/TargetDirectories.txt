@@ -1,0 +1,12 @@
+C:/Users/user/Desktop/ExpenseTracker/build/CMakeFiles/expense-tracker.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/fuzz/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/fuzz/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/src/CMakeFiles/CLI11.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/src/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/src/CMakeFiles/rebuild_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/single-include/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/ExpenseTracker/build/CLI11/single-include/CMakeFiles/rebuild_cache.dir

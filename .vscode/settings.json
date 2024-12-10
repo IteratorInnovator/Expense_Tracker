@@ -1,0 +1,13 @@
+{
+    "cmake.sourceDirectory": "C:/Users/user/Desktop/ExpenseTracker/CLI11",
+    "cmake.useCMakePresets": "never",
+    "cmake.configureOnOpen": false,
+    "cmake.buildOnSave": false,
+    "cmake.ctest.parallelJobs": 0,
+    "cmake.runTestsOnBuild":false,
+    "cmake.autoBuild": false,
+    "cmake.testParser.enabled": false,
+    "files.associations": {
+        "*.tcc": "cpp"
+    }
+}
