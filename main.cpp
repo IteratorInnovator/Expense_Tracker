@@ -12,15 +12,7 @@
 #include "Error.hpp"
 #include "CLI\CLI.hpp"
 
-/*
-Debug following errors:
-Change int amount to double amount (fixed)
-Adding new expenses generates same id of 2
-Deleting expense w id of 2 generates invalid argument error (fixed: did not clear 'words' vector containing splitted line)
-Deleting an expense empties the whole file  (fixed: did not clear 'words' vector containing splitted line)
-debug overloaded << operator for Month enums (fixed: added break statements)
-summary --year 2024 generates error (fixed: correct argument input for splitting line)
-*/
+
 using namespace std;
 
 
