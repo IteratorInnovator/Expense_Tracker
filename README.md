@@ -43,4 +43,4 @@ A simple and efficient tool to keep track of your expenses. This application all
 
 -The expense-tracker executable is pre-built and included in the repository. If you encounter compatibility issues or wish to modify the source code, you can rebuild it using a C++17-compatible compiler. If you're distributing the executable, ensure it's compiled in a way that maximizes compatibility (e.g., statically linking libraries or building on a standard environment). Let me know if you'd like to include additional details!
 
-Project URL: https://github.com/IteratorInnovator/Expense_Tracker.git
+Project URL: https://github.com/IteratorInnovator/Expense_Tracker
