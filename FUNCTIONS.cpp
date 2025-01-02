@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <regex>
 #include <sstream>
 #include "Error.hpp"
 #include "FUNCTIONS.hpp"
@@ -68,14 +69,6 @@ string get_current_date(){
     return ss.str();
 }
 
-void split(vector<string> &split_line, const string &line, const char &del){
-    stringstream ss (line);
-    string word;
-    while (getline(ss,word,del)){
-        split_line.push_back(word);
-    }
-}
-
 int create_new_id(){
     ifstream in_file {FILENAME};
     if (!in_file.is_open()){
@@ -109,7 +102,6 @@ bool is_file_empty(ifstream &in_file){
     // peek at next file character without extracting it
     // if returned character is EOF (negative integer constant), it means file is empty
 }
-
 
 // command line functions
 
@@ -225,12 +217,11 @@ void summary(){
     }
     string line;
     double total {0};
-    vector<string> words;
-    words.reserve(2);
+    regex amount_pattern("\$(\d+(\.\d+)?)$");
     while (getline(in_file,line)){
-        split(words,line,'$');
-        total += stod(words.at(1));
-        words.clear();
+        smatch match;
+        regex_match(line,match,amount_pattern);
+        total += stod(match[1]);
     }
     in_file.close();
     cout << fixed << setprecision(2) << "Total expenses: $" << total << endl;
@@ -256,16 +247,14 @@ void summary(const string &month, const string &year){
     double total {0};
     string target_date = year + "-" + month;
     string line;
+    string pattern = "^" + target_date + "-[0][1-9]|[1-2][0-9]|[3][0-1]";
+    regex date_pattern(pattern);
+    regex amount_pattern("\$(\d+(\.\d+)?)$");
     while (getline(in_file,line)){
-        vector<string> words;
-        words.reserve(4);
-        split(words,line,'|');
-        string date = words.at(1);
-        if (date.find(target_date)!=string::npos){
-            vector<string> expense_data;
-            expense_data.reserve(2);
-            split(expense_data,line,'$');
-            total += stod(expense_data.at(1));
+        if (regex_match(line,date_pattern)){
+            smatch match;
+            regex_match(line,match,amount_pattern);
+            total += stod(match[1]);
         }
     }
     Month month_in_alpha = static_cast<Month>(month_in_numeric);
@@ -289,19 +278,16 @@ void summary(const int &year){
     const string year_in_alpha = to_string(year);
     double total {0};
     string line;
+    string pattern = year_in_alpha + "-";
+    regex date_pattern(pattern);
+    regex amount_pattern("\$(\d+(\.\d+)?)$");
     while (getline(in_file,line)){
-        vector<string> words;
-        words.reserve(4);
-        split(words,line,'|');
-        vector<string> date;
-        date.reserve(3);
-        split(date,words.at(1),'-');
-        if (date.at(0).find(year_in_alpha)!=string::npos){
-            vector<string> expense_data;
-            expense_data.reserve(2);
-            split(expense_data,line,'$');
-            total += stod(expense_data.at(1));
+        if (regex_match(line,date_pattern)){
+            smatch match;
+            regex_match(line,match,amount_pattern);
+            total += stod(match[1]);
         }
+
     }
     cout << fixed << setprecision(2) <<  "Total expenses in " << year << ": $" << total << endl;
     cout << setprecision(6);

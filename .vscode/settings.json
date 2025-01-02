@@ -8,6 +8,7 @@
     "cmake.autoBuild": false,
     "cmake.testParser.enabled": false,
     "files.associations": {
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "iomanip": "cpp"
     }
 }
